@@ -46,15 +46,29 @@ for (let i=0; i<supplyChanges.length; i++) {
   if (supplyChanges[i] < 0) {
     console.log('Removed', supplyChanges[i], 'parts.');
   }
-} //end for loop
+} //end 'for' loop
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
 
+for (parts of supplyChanges) {
+  if (parts > 0) {
+    console.log('Added', parts, 'parts.');
+  }
+  if (parts === 0) {
+    console.log('No Changes.');
+  }
+  if (parts < 0) {
+    console.log('Removed', parts, 'parts.');
+  }
+} // end 'for of' loop
+
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
+
+
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
